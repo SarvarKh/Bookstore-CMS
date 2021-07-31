@@ -1,4 +1,5 @@
 import React from 'react';
+import Book from '../components/Book';
 
 function BooksList() {
   return (
@@ -8,11 +9,7 @@ function BooksList() {
         <th>Title</th>
         <th>Category</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</td>
-        <td>Productivity</td>
-      </tr>
+      <Book />
       <tr>
         <td>2</td>
         <td>The One Thing</td>
