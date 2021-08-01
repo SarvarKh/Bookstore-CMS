@@ -10,17 +10,17 @@ import rootReducer from './reducers/index';
 const initialState = {
   books: [
     {
-      id: 1,
+      id: Math.floor(Math.random() * 1000000),
       title: 'Book title one',
       category: 'Learning',
     },
     {
-      id: 2,
+      id: Math.floor(Math.random() * 1000000),
       title: 'Book title two',
       category: 'Biography',
     },
     {
-      id: 3,
+      id: Math.floor(Math.random() * 1000000),
       title: 'Book title three',
       category: 'Learning',
     },
