@@ -1,11 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Book = () => (
+const Book = ({ book }) => (
   <tr>
-    <td>1</td>
-    <td>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</td>
-    <td>Productivity</td>
+    <td>{book.bookId}</td>
+    <td>{book.title}</td>
+    <td>{book.category}</td>
   </tr>
 );
 
 export default Book;
+Book.propTypes = {
+  book: PropTypes.instanceOf(Object).isRequired,
+};
