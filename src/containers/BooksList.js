@@ -9,9 +9,13 @@ const BooksList = ({ books }) => (
       <th>Book ID</th>
       <th>Title</th>
       <th>Category</th>
+      <th>Option</th>
     </tr>
     {books.map((book) => (
-      <Book key={book.id} book={book} />
+      <tr key={book.id}>
+        <Book book={book} />
+        <button type="button">Remove Book</button>
+      </tr>
     ))}
   </table>
 );
