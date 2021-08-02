@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { createBook } from '../actions';
+import { createBook } from '../actions/index';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -25,13 +25,20 @@ class BooksForm extends React.Component {
     }
   }
 
-  handleSubmit = () => {
-    this.createBook();
+  handleSubmit(e) {
+    e.preventDefault();
+    const { category, title } = this.state;
+    const id = Math.floor(Math.random() * 1000000);
+    const { addBook } = this.props;
+    addBook({ id, category, title });
+    this.setState({
+      title: '',
+      category: '',
+    });
   }
 
   render() {
     const { title } = this.state;
-    const { category } = this.state;
     return (
       <form>
         <input onChange={(e) => this.handleChange(e)} type="text" placeholder="Book title" name="title" value={title} />
@@ -39,7 +46,7 @@ class BooksForm extends React.Component {
         <select onChange={(e) => this.handleChange(e)} name="category">
           <option value="default">--Please choose a category--</option>
           {bookCategories.map((bookCategory) => (
-            <option key={bookCategory} value={category}>{bookCategory}</option>
+            <option key={bookCategory} value={bookCategory}>{bookCategory}</option>
           ))}
         </select>
 
@@ -50,13 +57,13 @@ class BooksForm extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  createBook: () => {
-    dispatch(createBook());
+  addBook: (book) => {
+    dispatch(createBook(book));
   },
 });
 
-export default connect(null, mapDispatchToProps)(BooksForm);
-BooksForm.protoTypes = {
-  title: PropTypes.instanceOf(String).isRequired,
-  category: PropTypes.instanceOf(String).isRequired,
+BooksForm.propTypes = {
+  addBook: PropTypes.func.isRequired,
 };
+
+export default connect(null, mapDispatchToProps)(BooksForm);
