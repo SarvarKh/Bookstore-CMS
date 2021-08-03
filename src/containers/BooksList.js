@@ -11,15 +11,19 @@ const BooksList = ({ books, removeBook }) => {
 
   return (
     <table>
-      <tr>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
-        <th>Option</th>
-      </tr>
-      {books.map((abook) => (
-        <Book handleRemove={handleRemoveBook} book={abook} key={abook.id} />
-      ))}
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map((abook) => (
+          <Book handleRemove={handleRemoveBook} book={abook} key={abook.id} />
+        ))}
+      </tbody>
     </table>
   );
 };
