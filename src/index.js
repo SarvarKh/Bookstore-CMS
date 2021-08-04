@@ -25,7 +25,6 @@ const initialState = {
       category: 'Learning',
     },
   ],
-  filter: 'All',
 };
 
 /* eslint-disable no-underscore-dangle */

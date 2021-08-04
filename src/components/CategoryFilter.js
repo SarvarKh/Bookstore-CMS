@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 
-const CategoryFilter = ({ handleFilter, category }) => {
-  const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const CategoryFilter = ({ handleFilter }) => {
+  const bookCategories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
-    <select onChange={() => handleFilter(category)} name="category">
-      <option value="All">All</option>
+    <select onChange={(e) => handleFilter(e.target.value)} name="category">
       {bookCategories.map((bookCategory) => (
         <option key={bookCategory} value={bookCategory}>{bookCategory}</option>
       ))}
@@ -14,7 +13,6 @@ const CategoryFilter = ({ handleFilter, category }) => {
 
 CategoryFilter.propTypes = {
   handleFilter: PropTypes.func.isRequired,
-  category: PropTypes.string.isRequired,
 };
 
 export default CategoryFilter;
