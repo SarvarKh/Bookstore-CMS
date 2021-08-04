@@ -1,13 +1,13 @@
-// import { CHANGE_FILTER } from "../actions";
+import { CHANGE_FILTER } from '../actions';
 
-// const filterReducer = (state, action) {
-//     switch (action.type) {
-//         case CHANGE_FILTER:
-//             return {
+const filterReducer = (state = 'All', action) => {
+  switch (action.type) {
+    case CHANGE_FILTER:
+      return { category: action.category };
 
-//             }
+    default:
+      return state;
+  }
+};
 
-//         default:
-//             state;
-//     }
-// }
+export default filterReducer;
