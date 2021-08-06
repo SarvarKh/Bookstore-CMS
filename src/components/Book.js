@@ -7,15 +7,15 @@ const Book = ({ book, handleRemove }) => (
       <div className="card-top">
         <div className="category">{book.category}</div>
         <div className="title">{book.title}</div>
-        <div className="text-grey">
+        <div className="text-l-blue">
           Book ID:
           {book.id}
         </div>
       </div>
       <div className="card-bottom flex">
-        <span className="card-btn text-grey">Comments</span>
-        <button onClick={() => handleRemove(book)} type="submit" className="card-btn text-grey">Remove</button>
-        <span className="card-btn text-grey">Edit</span>
+        <div className="text-l-blue">Comments</div>
+        <button onClick={() => handleRemove(book)} type="submit" className="card-btn text-l-blue">Remove</button>
+        <div className="text-l-blue">Edit</div>
       </div>
     </div>
     <div className="part-2 flex">

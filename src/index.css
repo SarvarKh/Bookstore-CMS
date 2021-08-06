@@ -5,6 +5,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-grey {
+  color: #121212;
+  opacity: 0.5;
+}
+
+.text-l-blue {
+  color: #4386bf;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: #121212;
+}
+
 #root {
   padding: 9.3rem 6.25rem;
   background-color: #f5f6fa;
@@ -12,6 +32,7 @@
 
 .container {
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar {
@@ -64,4 +85,17 @@ main {
   background-color: #fff;
   padding: 1.6rem;
   justify-content: space-between;
+}
+
+.card-btn {
+  border: none;
+  background: none;
+  padding: 0 0.75rem;
+  margin: 0 0.75rem;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+}
+
+.card-bottom {
+  margin-top: 1.3rem;
 }
