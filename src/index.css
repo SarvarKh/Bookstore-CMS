@@ -76,7 +76,7 @@
 }
 
 main {
-  padding: 2.3rem 6.25rem;
+  padding: 2.3rem 6.25rem 1rem 6.25rem;
   background-color: #fafafa;
 }
 
@@ -126,4 +126,43 @@ main {
 
 .margin-left {
   margin-left: 3rem;
+}
+
+footer {
+  background: #fafafa;
+}
+
+form {
+  margin: 0 6.25rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+form div {
+  color: #888888;
+  padding-bottom: 0.8rem;
+}
+
+.form-container {
+  justify-content: space-between;
+}
+
+.item {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+}
+
+.flex-item-1 {
+  flex-grow: 10;
+  margin-left: 0;
+}
+
+.flex-item-2 {
+  flex-grow: 2;
+}
+
+.flex-item-3 {
+  flex-grow: 2;
+  margin-right: 0;
 }

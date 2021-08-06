@@ -40,18 +40,23 @@ class BooksForm extends React.Component {
   render() {
     const { title } = this.state;
     return (
-      <form>
-        <input onChange={(e) => this.handleChange(e)} type="text" placeholder="Book title" name="title" value={title} />
+      <footer>
+        <form>
+          <div>ADD NEW BOOK</div>
+          <div className="form-container flex">
+            <input onChange={(e) => this.handleChange(e)} type="text" placeholder="Book title" name="title" value={title} className="flex-item-1 item" />
 
-        <select onChange={(e) => this.handleChange(e)} name="category">
-          <option value="default">--Please choose a category--</option>
-          {bookCategories.map((bookCategory) => (
-            <option key={bookCategory} value={bookCategory}>{bookCategory}</option>
-          ))}
-        </select>
+            <select onChange={(e) => this.handleChange(e)} name="category" className="flex-item-2 item">
+              <option value="default">--Please choose a category--</option>
+              {bookCategories.map((bookCategory) => (
+                <option key={bookCategory} value={bookCategory}>{bookCategory}</option>
+              ))}
+            </select>
 
-        <input type="submit" value="Submit" onClick={this.handleSubmit} />
-      </form>
+            <input type="submit" value="Submit" onClick={this.handleSubmit} className="flex-item-3 item update-btn" />
+          </div>
+        </form>
+      </footer>
     );
   }
 }
