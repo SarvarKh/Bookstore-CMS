@@ -1,5 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import '../circle-styling.css';
+
+const percentage = Math.floor(Math.random() * 100);
 
 const Book = ({ book, handleRemove }) => (
   <div className="row flex">
@@ -18,14 +22,19 @@ const Book = ({ book, handleRemove }) => (
         <div className="text-l-blue">Edit</div>
       </div>
     </div>
-    <div className="part-2 flex">
-      <div>Graph</div>
+    <div className="flex margin-left">
+      <div className="circle">
+        <CircularProgressbar value={percentage} text={`${percentage}%`} />
+      </div>
       <div>
-        <div className="percent">64%</div>
+        <div className="percent">
+          {percentage}
+          %
+        </div>
         <div className="text-grey">Completed</div>
       </div>
     </div>
-    <div className="part-3">
+    <div className="margin-right">
       <div className="text-grey">CURRENT CHAPTER</div>
       <div>Chapter 17</div>
       <button className="update-btn" type="button">UPDATE PROGRESS</button>

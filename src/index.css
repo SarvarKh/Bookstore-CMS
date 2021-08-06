@@ -99,3 +99,31 @@ main {
 .card-bottom {
   margin-top: 1.3rem;
 }
+
+.circle {
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-right: 1rem;
+}
+
+.percent {
+  font-size: 2rem;
+}
+
+.update-btn {
+  background: #0290ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 1rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
+  border-left: 1px solid #e8e8e8;
+  padding-left: 5rem;
+}
+
+.margin-left {
+  margin-left: 3rem;
+}
