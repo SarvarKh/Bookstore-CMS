@@ -19,21 +19,12 @@ const BooksList = ({
   return (
     <>
       <CategoryFilter handleFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books.filter((book) => (filter === 'All' ? books : book.category === filter))
-            .map((abook) => (
-              <Book handleRemove={handleRemoveBook} book={abook} key={abook.id} />
-            ))}
-        </tbody>
-      </table>
+      <main>
+        {books.filter((book) => (filter === 'All' ? books : book.category === filter))
+          .map((abook) => (
+            <Book handleRemove={handleRemoveBook} book={abook} key={abook.id} />
+          ))}
+      </main>
     </>
   );
 };

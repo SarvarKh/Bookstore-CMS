@@ -53,3 +53,15 @@
   border-radius: 50%;
   border-color: #e8e8e8;
 }
+
+main {
+  padding: 2.3rem 6.25rem;
+  background-color: #fafafa;
+}
+
+.row {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  justify-content: space-between;
+}
