@@ -4,7 +4,7 @@ const CategoryFilter = ({ handleFilter }) => {
   const bookCategories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div className="flex navbar">
-      <div className="left flex">
+      <div className="flex left">
         <h2 className="logo">Bookstore CMS</h2>
         <span className="navbar-text">BOOKS</span>
         <select onChange={(e) => handleFilter(e.target.value)} name="category" className="navbar-text">
