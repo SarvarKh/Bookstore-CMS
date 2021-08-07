@@ -178,7 +178,8 @@ form div {
 
       .navbar {
         flex-direction: column;
-        padding: 2rem 1rem;
+        padding: 2rem 0;
+        justify-content: space-around;
       }
 
       .row {
@@ -195,5 +196,10 @@ form div {
 
       .logo {
         font-size: 1rem;
+      }
+
+      .right {
+        position: absolute;
+        right: 1rem;
       }
     }
