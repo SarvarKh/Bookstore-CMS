@@ -178,20 +178,28 @@ form div {
 
       .navbar {
         flex-direction: column;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
+        margin: 0 1.6rem;
         justify-content: space-around;
       }
 
       .row {
         flex-direction: column;
+        margin: 1.6rem 1.6rem 2.6rem 1.6rem;
+        padding: 0.5rem 1rem;
       }
 
       .form-container {
         flex-direction: column;
       }
 
-      .left * {
-        margin-right: 1rem;
+      .left {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .left span {
+        display: none;
       }
 
       .logo {
@@ -199,7 +207,29 @@ form div {
       }
 
       .right {
-        position: absolute;
-        right: 1rem;
+        display: none;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      .card-bottom {
+        margin-top: 0.5rem;
+      }
+
+      .margin-left {
+        margin: 0;
+        padding: 1.5rem 0;
+      }
+
+      .margin-right {
+        margin: 0;
+        padding: 0;
+      }
+
+      form {
+        margin: 0;
+        padding: 0;
       }
     }
