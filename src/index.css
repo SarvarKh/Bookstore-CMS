@@ -170,8 +170,8 @@ form div {
 /* Mobile view */
 @media only screen
   and (min-device-width: 220px)
-    and (max-device-width: 992px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 992px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   #root {
     padding: 0;
   }
