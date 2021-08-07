@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Raect Calculator
+# Book Store CMS (Magic-books-inc)
 
-> A calculator app built with React.js using React Hooks and Routers. App contains 3 pages with basic styling. Calculator operations, as well as React components, were tested with Jest and React Testing Library.
+> A Bookstore is responsive app - Content Management System, CMS, built with React.js using Redux.js. User can add a book or remove it from Redux store.
 
 <div align="center">
   <img src="screenshots/general.jpg?raw=true" width="100%" height="auto"/>
@@ -16,7 +16,6 @@
 - [npm](https://www.npmjs.com/)
 - [ES6](https://www.ecma-international.org/)
 - [JavaScript](https://www.javascript.com/)
-- [Webpack](https://webpack.js.org/)
 - [HTML](https://html.spec.whatwg.org/)/[CSS](https://www.w3.org/TR/CSS/#css)
 
 ## Live Demo
