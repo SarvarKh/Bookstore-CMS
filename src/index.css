@@ -166,3 +166,34 @@ form div {
   flex-grow: 2;
   margin-right: 0;
 }
+
+/* Mobile view */
+@media only screen 
+    and (min-device-width: 220px) 
+    and (max-device-width: 992px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      #root {
+        padding: 0;
+      }
+
+      .navbar {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .form-container {
+        flex-direction: column;
+      }
+
+      .left * {
+        margin-right: 1rem;
+      }
+
+      .logo {
+        font-size: 1rem;
+      }
+    }
