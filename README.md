@@ -6,7 +6,7 @@
 
 <div align="center">
   <img src="screenshots/general.jpg?raw=true" width="100%" height="auto"/>
-  <img src="screenshots/mobile.jpg?raw=true" width="80%" height="auto"/>
+  <img src="screenshots/mobile.jpg?raw=true" width="100%" height="auto"/>
 </div>
 
 ## Built With

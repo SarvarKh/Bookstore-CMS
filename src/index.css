@@ -168,73 +168,73 @@ form div {
 }
 
 /* Mobile view */
-@media only screen 
-    and (min-device-width: 220px) 
+@media only screen
+  and (min-device-width: 220px)
     and (max-device-width: 992px)
     and (-webkit-min-device-pixel-ratio: 2) {
-      #root {
-        padding: 0;
-      }
+  #root {
+    padding: 0;
+  }
 
-      .navbar {
-        flex-direction: column;
-        padding: 2rem 1rem;
-        margin: 0 1.6rem;
-        justify-content: space-around;
-      }
+  .navbar {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 0 1.6rem;
+    justify-content: space-around;
+  }
 
-      .row {
-        flex-direction: column;
-        margin: 1.6rem 1.6rem 2.6rem 1.6rem;
-        padding: 0.5rem 1rem;
-      }
+  .row {
+    flex-direction: column;
+    margin: 1.6rem 1.6rem 2.6rem 1.6rem;
+    padding: 0.5rem 1rem;
+  }
 
-      .form-container {
-        flex-direction: column;
-      }
+  .form-container {
+    flex-direction: column;
+  }
 
-      .left {
-        width: 100%;
-        justify-content: space-between;
-      }
+  .left {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-      .left span {
-        display: none;
-      }
+  .left span {
+    display: none;
+  }
 
-      .logo {
-        font-size: 1rem;
-      }
+  .logo {
+    font-size: 1rem;
+  }
 
-      .right {
-        display: none;
-      }
+  .right {
+    display: none;
+  }
 
-      main {
-        padding: 0;
-      }
+  main {
+    padding: 0;
+  }
 
-      .card-bottom {
-        margin-top: 0.5rem;
-      }
+  .card-bottom {
+    margin-top: 0.5rem;
+  }
 
-      .margin-left {
-        margin: 0;
-        padding: 1.5rem 0;
-      }
+  .margin-left {
+    margin: 0;
+    padding: 1.5rem 0;
+  }
 
-      .margin-right {
-        margin: 0;
-        padding: 0;
-      }
+  .margin-right {
+    margin: 0;
+    padding: 0;
+  }
 
-      form {
-        margin: 1.6rem;
-        padding: 1rem;
-      }
+  form {
+    margin: 1.6rem;
+    padding: 1rem;
+  }
 
-      .form-container * {
-        padding: 0.5rem;
-        margin: 0 0 1rem 0;
-      }
-    }
+  .form-container * {
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+}
