@@ -5,7 +5,8 @@
 > A calculator app built with React.js using React Hooks and Routers. App contains 3 pages with basic styling. Calculator operations, as well as React components, were tested with Jest and React Testing Library.
 
 <div align="center">
-  <img src="screenshots/general.png?raw=true" width="100%" height="auto"/>
+  <img src="screenshots/general.jpg?raw=true" width="100%" height="auto"/>
+  <img src="screenshots/mobile.jpg?raw=true" width="80%" height="auto"/>
 </div>
 
 ## Built With
