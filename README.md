@@ -22,11 +22,6 @@
 
 [Live Demo Link](https://boostore-2.herokuapp.com/)
 
-<div align="center">
-  <img src="screenshots/testing_02.png?raw=true" width="90%" height="auto"/>
-</div>
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
